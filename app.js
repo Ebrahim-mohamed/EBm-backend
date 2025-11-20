@@ -32,6 +32,7 @@ app.use(
       "https://72.61.187.71:3000",
       "https://www.ebmksa.com",
       "https://ebmksa.com",
+      "https://api.ebmksa.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
