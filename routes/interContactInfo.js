@@ -33,7 +33,7 @@ mongoose.connection.once("open", () => {
 });
 
 /**
- * @route GET /api/inter-contact-info
+ * @route GET /api/interContact-info
  * @desc Get the single InterContactInfo document
  */
 router.get("/", async (req, res) => {
