@@ -44,6 +44,7 @@ app.use("/contact-info", require("./routes/ebmContactInfo"));
 app.use("/interContact-info", require("./routes/interContactInfo"));
 app.use("/contact", require("./routes/contact"));
 app.use("/contact-for-inter", require("./routes/contactForInter"));
+app.use("/admin", require("./routes/adminAuth"));
 app.listen(3001, () => {
   console.log("Server running on port 3001");
 });
