@@ -12,6 +12,7 @@ const contactSchema = new Schema(
       ar: { type: String, required: true },
     },
     email: { type: String, required: true },
+    whatsappNumber: { type: String, required: true },
   },
   { timestamps: true }
 );

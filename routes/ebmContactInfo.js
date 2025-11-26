@@ -16,9 +16,9 @@ router.get("/", async (req, res) => {
 /* PUT: update entire contact info */
 router.put("/", async (req, res) => {
   try {
-    const { address, phone, email } = req.body;
+    const { address, phone, email, whatsappNumber } = req.body;
 
-    if (!address || !phone || !email) {
+    if (!address || !phone || !email || !whatsappNumber) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
@@ -31,6 +31,7 @@ router.put("/", async (req, res) => {
     info.address = address;
     info.phone = phone;
     info.email = email;
+    info.whatsappNumber = whatsappNumber;
 
     const updated = await info.save();
 
