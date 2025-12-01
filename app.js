@@ -47,6 +47,7 @@ app.use("/contact", require("./routes/contact"));
 app.use("/contact-for-inter", require("./routes/contactForInter"));
 app.use("/admin", require("./routes/adminAuth"));
 app.use("/company-profile", require("./routes/companyProfile"));
+app.use("/inter-company-profile", require("./routes/interCompanyProfile"));
 app.listen(3001, () => {
   console.log("Server running on port 3001");
 });
