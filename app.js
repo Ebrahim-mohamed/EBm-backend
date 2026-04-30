@@ -4,16 +4,13 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 mongoose
-  .connect(
-    "mongodb+srv://ebmo3112002_admin:gyLMR7TaapD7hG7C@ebmdatabase.p98k1hc.mongodb.net/?appName=ebmDataBase"
-  )
+  .connect("mongodb://127.0.0.1:27017/ebmksa")
   .then(() => {
-    console.log("connected to database");
+    console.log("connected to local database");
   })
   .catch((error) => {
     console.log("not connected to database", error);
   });
-
 const app = express();
 
 // ✅ Parse JSON bodies
