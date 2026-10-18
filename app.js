@@ -42,6 +42,7 @@ app.use("/projects", require("./routes/projects"));
 app.use("/contact-info", require("./routes/ebmContactInfo"));
 app.use("/interContact-info", require("./routes/interContactInfo"));
 app.use("/contact", require("./routes/contact"));
+app.use("/story-images-api", require("./routes/storyImages"));
 app.use("/installation-profile", require("./routes/installationProfile"));
 app.use("/contact-for-inter", require("./routes/contactForInter"));
 app.use("/admin", require("./routes/adminAuth"));
