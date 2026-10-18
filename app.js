@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/ebmksa")
+// .connect("mongodb+srv://gawilil747_db_user:WhzJVpxUYeNJehUJ@ebm.yymzahb.mongodb.net/")
+.connect("mongodb://127.0.0.1:27017/ebmksa")
   .then(() => {
     console.log("connected to local database");
   })
@@ -41,6 +42,7 @@ app.use("/projects", require("./routes/projects"));
 app.use("/contact-info", require("./routes/ebmContactInfo"));
 app.use("/interContact-info", require("./routes/interContactInfo"));
 app.use("/contact", require("./routes/contact"));
+app.use("/installation-profile", require("./routes/installationProfile"));
 app.use("/contact-for-inter", require("./routes/contactForInter"));
 app.use("/admin", require("./routes/adminAuth"));
 app.use("/company-profile", require("./routes/companyProfile"));
